@@ -14,7 +14,7 @@ func _on_area_2d_body_entered(body):
 	# if we hit player
 	if body.name == "player":
 		# change image to explosion image to show an impact
-		texture = load("res://images/explosion_enemy.png")
+		texture = load("res://images/explosion_enemybomb.png")
 		# stop the process function so, bullet don't move 
 		set_process(false)
 		# reduce the health of the player. 
@@ -24,5 +24,3 @@ func _on_area_2d_body_entered(body):
 		await  get_tree().create_timer(0.2).timeout
 		# delete the bullet
 		queue_free()
-
-

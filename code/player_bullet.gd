@@ -14,7 +14,7 @@ func _on_visibility_notifier_screen_exited():
 func _on_area_2d_body_entered(body):
 	if body.name != "player":
 		# changing our bullet image into explosion 
-		texture = load("res://images/player_explosion.png")
+		texture = load("res://images/player_flamebomb.png")
 		# stoping the process function so that, it doesn't move.
 		set_process(false)
 		# reducing the health of the body ( enemy )
@@ -23,4 +23,3 @@ func _on_area_2d_body_entered(body):
 		await  get_tree().create_timer(0.2).timeout
 		# deleting the bullet
 		queue_free()
-

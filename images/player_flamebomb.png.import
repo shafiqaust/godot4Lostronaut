@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cntxe0t7pvkmr"
-path="res://.godot/imported/explosion_enemy.png-91ee3a4cbe3bd03c6e23ff5bfe262260.ctex"
+uid="uid://dwqxcms4t0avv"
+path="res://.godot/imported/player_flamebomb.png-ba851228b65c1e515d9aebb552040181.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/explosion_enemy.png"
-dest_files=["res://.godot/imported/explosion_enemy.png-91ee3a4cbe3bd03c6e23ff5bfe262260.ctex"]
+source_file="res://images/player_flamebomb.png"
+dest_files=["res://.godot/imported/player_flamebomb.png-ba851228b65c1e515d9aebb552040181.ctex"]
 
 [params]
 

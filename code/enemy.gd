@@ -68,4 +68,3 @@ func take_damage():
 		queue_free()
 		# emiting signal so, score can be updated on the UI
 		emit_signal("enemy_die")
-

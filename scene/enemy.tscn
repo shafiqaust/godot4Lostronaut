@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://1y6cnw73hcsh"]
+
+[ext_resource type="Script" path="res://code/enemy.gd" id="1_dvmcl"]
+[ext_resource type="Texture2D" uid="uid://cgsd0cs2cbbvx" path="res://images/alien -1.png.png" id="2_lapmd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l2j1r"]
+radius = 53.6004
+
+[node name="enemy" type="CharacterBody2D" groups=["enemy"]]
+collision_layer = 2
+script = ExtResource("1_dvmcl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 6)
+shape = SubResource("CircleShape2D_l2j1r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, -1)
+scale = Vector2(0.0430871, 0.03125)
+texture = ExtResource("2_lapmd")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="bullet_pos" type="Marker2D" parent="."]
+position = Vector2(0, 34)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
